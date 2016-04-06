@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">迫降大海</string>
+
+    <string name="mode_ready">点击屏幕开始游戏</string>
+    <string name="mode_pause">暂停\n点击屏幕继续游戏</string>
+    <string name="mode_lose">失败\n点击屏幕再来一次</string>
+    <string name="mode_win_suffix">成功!\n点击屏幕再来一次</string>
+
+    <string name="message_off_pad">超出着陆范围了</string>
+    <string name="message_too_fast">速度太快了</string>
+</resources>

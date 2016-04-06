@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jia.jason.airshiplandinsea" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/airship_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.JAirShipActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.BaseActivity"
+            android:exported="false">
+        </activity>
+        
+        <service android:name="com.qhad.ads.sdk.service.QhAdService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        
+        <activity android:name="com.qhad.ads.sdk.adcore.QhAdActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+
+        </activity>
+
+    </application>
+
+</manifest>
